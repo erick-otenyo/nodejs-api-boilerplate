@@ -1,7 +1,7 @@
 {
   "name": "nodejs-api-boilerplate",
   "version": "1.0.0",
-  "description": "A node js api boilerplate",
+  "description": "A nodejs-es6 api boilerplate",
   "main": "dist",
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erick-otenyo/simple-node-spatial-server.git"
+    "url": "git+https://github.com/erick-otenyo/nodejs-api-boilerplate.git"
   },
   "author": "Erick Otenyo",
   "license": "MIT",
