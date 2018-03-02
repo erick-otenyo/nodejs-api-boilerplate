@@ -1,11 +1,12 @@
-
-import dotenv from 'dotenv'
-
-dotenv.load();
+import Cloudant from "cloudant";
 
 export default callback => {
-    
-	// connect to a  Postgresql/postgis database, then pass it to `callback`:
+  // obtain cloudant_url from env
+  const cloudant_url = process.env.CLOUDANT_URL;
 
-	callback();
-}
+  // connect to cloudant db
+  const db = Cloudant(cloudant_url);
+
+  //return a callback with db
+  callback(db);
+};
